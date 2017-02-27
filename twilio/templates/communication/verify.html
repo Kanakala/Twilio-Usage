@@ -1,0 +1,8 @@
+{% if send_sms.id %}
+<form class="nomargin" method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+    {{form.body}}
+	<input type="submit" value="submit" />
+	
+	</form>
+	
+	{% endif %}
